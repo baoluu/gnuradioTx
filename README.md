@@ -1,6 +1,6 @@
 # gnuradioTx
 
-To execute the scrript
+To execute the script  <br />
 cd build <br />
 cmake ..  <br />
 make  <br />
