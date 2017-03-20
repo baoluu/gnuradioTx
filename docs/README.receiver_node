@@ -1,0 +1,11 @@
+This is the receiver_node-write-a-block package meant as a guide to building
+out-of-tree packages. To use the receiver_node blocks, the Python namespaces
+is in 'receiver_node', which is imported as:
+
+    import receiver_node
+
+See the Doxygen documentation for details about the blocks available
+in this package. A quick listing of the details can be found in Python
+after importing by using:
+
+    help(receiver_node)

@@ -1,0 +1,30 @@
+INCLUDE(FindPkgConfig)
+PKG_CHECK_MODULES(PC_RECEIVER_NODE receiver_node)
+
+FIND_PATH(
+    RECEIVER_NODE_INCLUDE_DIRS
+    NAMES receiver_node/api.h
+    HINTS $ENV{RECEIVER_NODE_DIR}/include
+        ${PC_RECEIVER_NODE_INCLUDEDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/include
+          /usr/local/include
+          /usr/include
+)
+
+FIND_LIBRARY(
+    RECEIVER_NODE_LIBRARIES
+    NAMES gnuradio-receiver_node
+    HINTS $ENV{RECEIVER_NODE_DIR}/lib
+        ${PC_RECEIVER_NODE_LIBDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/lib
+          ${CMAKE_INSTALL_PREFIX}/lib64
+          /usr/local/lib
+          /usr/local/lib64
+          /usr/lib
+          /usr/lib64
+)
+
+INCLUDE(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(RECEIVER_NODE DEFAULT_MSG RECEIVER_NODE_LIBRARIES RECEIVER_NODE_INCLUDE_DIRS)
+MARK_AS_ADVANCED(RECEIVER_NODE_LIBRARIES RECEIVER_NODE_INCLUDE_DIRS)
+

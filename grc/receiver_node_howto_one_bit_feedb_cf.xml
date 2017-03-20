@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<block>
+  <name>1-bit feedback</name>
+  <key>howto_one_bit_feedb_cf</key>
+  <category>D-Tx beamforming</category>
+  <import>import receiver_node</import>
+  <make>receiver_node.howto_one_bit_feedb_cf($sample_rate, $decim_factor)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+        <name>Sample Rate</name>
+        <key>sample_rate</key>
+        <type>real</type>
+  </param>
+  
+  <param>
+        <name>Decimation Factor</name>
+        <key>decim_factor</key>
+        <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>

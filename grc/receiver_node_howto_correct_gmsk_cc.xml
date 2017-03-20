@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<block>
+  <name>Correct GMSK phase</name>
+  <key>howto_correct_gmsk_cc</key>
+  <category>receiver_node</category>
+  <import>import receiver_node</import>
+  <make>receiver_node.howto_correct_gmsk_cc($nbr_samples_packet, $sampling_freq)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+  <name>Nbr samples packet</name>
+  <key>nbr_samples_packet</key>
+  <type>real</type>
+  </param>
+
+  <param>
+  <name>Sampling frequency</name>
+  <key>sampling_freq</key>
+  <type>real</type>
+  </param>
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+  <doc>
+    This block corrects the phase of the GMSK packets so that the absolute phase of each packet is zero. 
+  </doc>
+</block>

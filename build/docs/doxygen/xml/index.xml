@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1receiver__node_1_1howto__correct__gmsk__cc" kind="class"><name>gr::receiver_node::howto_correct_gmsk_cc</name>
+    <member refid="classgr_1_1receiver__node_1_1howto__correct__gmsk__cc_1ab8f78fe55d89f1071e808159e0ba2661" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1receiver__node_1_1howto__correct__gmsk__cc_1add12cf8cdc914e6748ba036f20515719" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1receiver__node_1_1howto__correct__gmsk__cc__impl" kind="class"><name>gr::receiver_node::howto_correct_gmsk_cc_impl</name>
+    <member refid="classgr_1_1receiver__node_1_1howto__correct__gmsk__cc__impl_1a404b8fa8274c487507d6d97c6651ddf0" kind="variable"><name>d_nbr_samples_packet</name></member>
+    <member refid="classgr_1_1receiver__node_1_1howto__correct__gmsk__cc__impl_1a144cfcd115ab45133794445e9ba36402" kind="variable"><name>d_sampling_freq</name></member>
+    <member refid="classgr_1_1receiver__node_1_1howto__correct__gmsk__cc__impl_1ac624051f818498ec9ec0cd8f93ca6f94" kind="variable"><name>cpt_samples</name></member>
+    <member refid="classgr_1_1receiver__node_1_1howto__correct__gmsk__cc__impl_1aa12bd6a5b430c652c3a0551c08a00c9f" kind="variable"><name>phase_shift</name></member>
+    <member refid="classgr_1_1receiver__node_1_1howto__correct__gmsk__cc__impl_1af01de1cc5facd7a60b25da7582ffc51f" kind="function"><name>howto_correct_gmsk_cc_impl</name></member>
+    <member refid="classgr_1_1receiver__node_1_1howto__correct__gmsk__cc__impl_1a2e0b4921b7d4e458ccc9eb24500c34ed" kind="function"><name>~howto_correct_gmsk_cc_impl</name></member>
+    <member refid="classgr_1_1receiver__node_1_1howto__correct__gmsk__cc__impl_1afeee12d3620814d5b45ff03ffe4848b6" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1receiver__node_1_1howto__correct__gmsk__cc__impl_1a085777f82e71d0cbcc972d4f9a0067d5" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1receiver__node" kind="namespace"><name>gr::receiver_node</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a12ee7b6a0d37667597968fe89218c93a" kind="define"><name>RECEIVER_NODE_API</name></member>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="howto__correct__gmsk__cc_8h" kind="file"><name>howto_correct_gmsk_cc.h</name>
+  </compound>
+  <compound refid="howto__correct__gmsk__cc__impl_8h" kind="file"><name>howto_correct_gmsk_cc_impl.h</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_1ea919185fb97f7dae333dc4755baa1e" kind="dir"><name>receiver_node</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>
