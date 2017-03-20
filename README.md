@@ -1,8 +1,8 @@
 # gnuradioTx
 
 To execute the scrript
-`cd build
-cmake ..
-make
-sudo make install
+`cd build <br />
+cmake ..  <br />
+make  <br />
+sudo make install  <br />
 gnuradio-companion`
