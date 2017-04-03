@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<block>
+  <name>Random phase perturbation</name>
+  <key>howto_randphpert2_f</key>
+  <category>D-Tx beamforming</category>
+  <import>import transmit_node</import>
+  <make>transmit_node.howto_randphpert2_f($rand_pert_size, $bf_flag)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <callback>set_bf_flag($bf_flag)</callback>
+
+  <param>
+        <name>Perturbation angle (degrees)</name>
+        <key>rand_pert_size</key>
+        <type>real</type>
+  </param>
+
+   <param>
+        <name>Beamforming (On/Off)?</name>
+        <key>bf_flag</key>
+        <type>int</type>
+   </param>
+
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <doc>
+  Documentation to be done...
+  </doc>
+</block>
